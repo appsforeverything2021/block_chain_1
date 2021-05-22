@@ -41,30 +41,52 @@ export default function ({ navigation }) {
 						
 					</SectionContent>
 				</Section>
-				<Section style={{ marginVertical: 5, borderTopColor: '#000',  borderTopWidth: 0.2 }}>
-					<SectionContent style={{ flexDirection: 'row', borderBottomColor: '#000', borderBottomWidth: 0.2 }}>
-						<View >
+				<Section style={{ marginVertical: 5, borderTopColor: '#e6e6e6',  borderTopWidth: 1 }}>
+				<SectionContent style={{ flexDirection: 'row', borderBottomColor: '#e6e6e6', borderBottomWidth: 1 }}>
+						<View style={{ paddingRight: 10 }}>
 							<Image source={require('../../assets/Bitcoin-Logo.png')} style={{ height: 35, width: 35 }} />
 						</View>
 						<View style={{ paddingHorizontal: 10 }}>
 							<Text style={{ fontSize: 22 }}>Bitcoin</Text>
 							<View style={{ paddingTop: 8 }}>
 								<Text style={{ fontSize: 18 }}>$0.00</Text>
-								<Text style={{ fontSize: 18 }}>0 BTC</Text>
+								<Text style={{ fontSize: 16, color: "grey" }}>0 BTC</Text>
 							</View>
 						</View>
+
+						<SectionContent style={{ flexDirection: 'row', borderLeftColor: '#e6e6e6', borderLeftWidth: 1, marginLeft: 60, height: 100 }}>
+						<View style={{ paddingHorizontal: 15 }}>
+						<Image source={require('../../assets/Bitcoin-Logo.png')} style={{ height: 20, width: 20 }} />
+							<View style={{ paddingTop: 5, paddingBottom: 5 }}>
+								<Text style={{ fontSize: 15 }}>$0.00</Text>
+								<Text style={{ fontSize: 15, color: "red" }}>$ -0.00</Text>
+							</View>
+						</View>						
+						</SectionContent>
 					</SectionContent>
-					<SectionContent style={{ flexDirection: 'row', borderBottomColor: '#000', borderBottomWidth: 0.2 }}>
-						<View >
-							<Image source={require('../../assets/ether.png')} style={{ height: 35, width: 35 }} />
+
+					<SectionContent style={{ flexDirection: 'row', borderBottomColor: '#e6e6e6', borderBottomWidth: 1 }}>
+						<View style={{ paddingRight: 10 }}>
+							<Image source={require('../../assets/aave.png')} style={{ height: 35, width: 35 }} />
 						</View>
 						<View style={{ paddingHorizontal: 10 }}>
-							<Text style={{ fontSize: 22 }}>Ether</Text>
+							<Text style={{ fontSize: 22 }}>Aave</Text>
 							<View style={{ paddingTop: 8 }}>
 								<Text style={{ fontSize: 18 }}>$0.00</Text>
-								<Text style={{ fontSize: 18 }}>0 ETH</Text>
+								<Text style={{ fontSize: 16, color: "grey" }}>0 AAVE</Text>
 							</View>
 						</View>
+
+						<SectionContent style={{ flexDirection: 'row', borderLeftColor: '#e6e6e6', borderLeftWidth: 1, marginLeft: 80, height: 100 }}>
+
+						<View style={{ paddingHorizontal: 15 }}>
+						<Image source={require('../../assets/Bitcoin-Logo.png')} style={{ height: 20, width: 20 }} />
+							<View style={{ paddingTop: 5, paddingBottom: 5 }}>
+								<Text style={{ fontSize: 15 }}>$0.00</Text>
+								<Text style={{ fontSize: 15, color: "red" }}>$ -0.00</Text>
+							</View>
+						</View>						
+						</SectionContent>
 					</SectionContent>
 				</Section>
 			</View>
